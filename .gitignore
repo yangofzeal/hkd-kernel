@@ -1,0 +1,11 @@
+*.o
+*.so
+*.dylib
+*.a
+*.pyc
+__pycache__/
+bench_native
+bench_dense
+bench_app
+benchmark/results_*.txt
+.DS_Store
