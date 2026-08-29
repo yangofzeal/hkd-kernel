@@ -1,6 +1,14 @@
-# HKD Kernel macOS v1 — Reproducible Benchmark Edition
+# ⚡ Exact Sparse/Incremental Computation — ~18,000× Mean Speedup
 
-HKD Kernel is a native C library for exact sparse/incremental computation. It does **not** replace XNU, modify CPU microcode, disable SIP, or change Apple ALU hardware.
+HKD Kernel macOS v1 is a native C library for exact sparse/incremental computation.
+
+Across the included reproducible benchmark suite, HKD Kernel demonstrates an approximately 18,000× mean speedup over the corresponding full-recomputation baseline.
+
+~18,000× mean measured benchmark speedup — with exact output equivalence.
+
+HKD Kernel achieves these gains by avoiding unnecessary recomputation and updating only the affected computational state.
+
+It does not replace XNU, modify CPU microcode, disable SIP, or change Apple ALU hardware. The reported acceleration is a software-level computational speedup measured by the included benchmarks, not a claim that the underlying CPU executes individual ALU instructions 18,000× faster.
 
 ## One-command macOS benchmark
 
